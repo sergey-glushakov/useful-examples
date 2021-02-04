@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 
 *{
@@ -6,9 +6,38 @@
 }
 
 body{
-    font-family: 'Muli', sans-serif;
+    background-color: #8e44ad;
+    font-family: 'Roboto Mono', sans-serif;
     font-size: 14px;
-    width: 100vh;
     height: 100vh;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
+    color: #fff;
+}
+
+.counter-container{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px 50px;
+    text-align: center;
+}
+
+.counter{
+    font-size: 60px;
+    margin-top: 10px;
+
+}
+
+@media (max-width:580px) {
+    body{
+        flex-direction: column;
+    }
+
 }
